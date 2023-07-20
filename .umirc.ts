@@ -29,11 +29,7 @@ export default defineConfig({
           path: '/access',
           component: './Access',
         },
-        {
-          name: ' CRUD 示例',
-          path: '/table',
-          component: './Table',
-        },
+
         {
           name: ' detail 示例',
           path: '/detail',
@@ -43,4 +39,5 @@ export default defineConfig({
     },
   ],
   npmClient: 'pnpm',
+  mfsu: {},
 });
