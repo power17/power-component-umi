@@ -1,6 +1,6 @@
 import { getSiteInfo } from '@/utils/service';
+import { Outlet } from '@umijs/max';
 import React, { ReactNode, useEffect, useState } from 'react';
-import { Outlet } from 'umi';
 import styles from './index.less';
 interface Props {
   children: ReactNode;

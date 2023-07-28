@@ -17,11 +17,14 @@
     "@ant-design/pro-components": "^2.6.7",
     "@umijs/max": "^4.0.72",
     "antd": "^5.7.1",
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "moment": "^2.29.4",
+    "showdown": "^2.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/showdown": "^2.0.1",
     "husky": "^8",
     "lint-staged": "^13",
     "prettier": "^2",
