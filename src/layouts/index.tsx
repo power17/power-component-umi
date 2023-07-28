@@ -1,12 +1,12 @@
-import getSiteInfo from '@/utils/service';
+import { getSiteInfo } from '@/utils/service';
 import React, { ReactNode, useEffect, useState } from 'react';
+import { Outlet } from 'umi';
 import styles from './index.less';
 interface Props {
-  name: string;
   children: ReactNode;
 }
 
-const HeaderLayous: React.FC<Props> = (props) => {
+const HeaderLayous: React.FC<Props> = () => {
   const [init, setInit] = useState(false);
   const [slogan, setSlogan] = useState('');
   const [copyright, setCopyright] = useState('');
@@ -26,7 +26,7 @@ const HeaderLayous: React.FC<Props> = (props) => {
   return (
     <div className={styles.normal}>
       <div className={styles.title}>{slogan}</div>
-      <div>{props.children}</div>
+      <Outlet />
       <div className={styles.footer}>{copyright}</div>
     </div>
   );

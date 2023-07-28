@@ -14,14 +14,11 @@ export default defineConfig({
     {
       path: '/',
       component: '@/layouts/index',
+      layout: false,
       routes: [
         {
+          name: 'home',
           path: '/',
-          redirect: '/home',
-        },
-        {
-          name: '',
-          path: '/home',
           component: './Home',
         },
         {
