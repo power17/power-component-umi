@@ -127,7 +127,7 @@ const HomePage: React.FC = () => {
           </Col>
         ))}
       </Row>
-      <Divider orientation="right">共四个组件</Divider>
+      <Divider orientation="right">共{list.length}个组件</Divider>
     </div>
   );
 };
